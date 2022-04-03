@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name         r/placeDE Template
+// @name         placeIT Template
 // @namespace    http://tampermonkey.net/
 // @version      2
 // @description  try to take over the canvas!
 // @author       mp1404
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
-// @updateURL    https://github.com/placeDE/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js
-// @downloadURL  https://github.com/placeDE/place-overlay/raw/main/src/scripts/placeDE-overlay.user.js
+// @updateURL    https://github.com/flangellotti/place-overlay/raw/main/src/scripts/placeIT-overlay.user.js
+// @downloadURL  https://github.com/flangellotti/place-overlay/raw/main/src/scripts/placeIT-overlay.user.js
 // ==/UserScript==
-let url = "https://raw.githubusercontent.com/placeDE/pixel/main/overlay.png"
-//url = "https://i.imgur.com/0fRq2nu.png"
+let url = "https://raw.githubusercontent.com/flangellotti/pixel/main/overlay.png"
+
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
         document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(
